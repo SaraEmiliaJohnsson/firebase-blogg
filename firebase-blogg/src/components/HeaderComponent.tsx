@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const HeaderComponent = () => {
@@ -7,8 +8,9 @@ const HeaderComponent = () => {
             <section className="header-container">
                 <nav>
                     <ul>
-                        <li><a href="/">Skriv ett inlägg</a></li>
-                        <li><a href="/">Läs inlägg</a></li>
+                        <li><Link to='/'>Startsida</Link></li>
+                        <li><Link to='/newpost'>Skriv ett inlägg</Link></li>
+                        <li><Link to='/allposts'>Läs inlägg</Link></li>
                     </ul>
                 </nav>
             </section>

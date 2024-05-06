@@ -12,6 +12,7 @@ const NewBloggPost = () => {
                 <input id="heading" type="text" placeholder="Rubrik..." />
                 <br />
                 <textarea name="blogg-text" id="blogg-text" placeholder="Skriv din text här..."></textarea>
+                <button type="submit">Skicka</button>
             </section >
         </>
 

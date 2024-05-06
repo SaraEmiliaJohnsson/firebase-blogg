@@ -7,7 +7,9 @@ const SeeAllBloggPosts = () => {
 
     return (
         <>
-            <h4>Alla inlägg</h4>
+            <section>
+                <h4>Alla inlägg</h4>
+            </section>
         </>
     )
 }
