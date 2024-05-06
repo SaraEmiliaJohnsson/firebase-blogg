@@ -38,6 +38,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3em;
 }
 
 ul {
@@ -72,7 +73,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #590152;
-  color: #213547;
+  color: #f9f9f9;
   cursor: pointer;
   transition: border-color 0.25s;
   margin: 0.3em;
@@ -93,7 +94,7 @@ button:focus-visible {
 
 #blogg-text {
   width: 20em;
-  height: 15em;
+  height: 10em;
   margin: 1.7em;
   padding: 0.3em;
   border-radius: 0.5em;
