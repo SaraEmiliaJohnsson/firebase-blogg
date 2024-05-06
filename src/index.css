@@ -48,6 +48,21 @@ ul {
   justify-content: space-around;
 }
 
+.blogg-post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogg-post-container li {
+  width: 20em;
+  height: 10em;
+  margin: 1em;
+  border: 2px solid #590152;
+  padding: 2em;
+}
+
 a {
   text-decoration: none;
   color: #f9f9f9;

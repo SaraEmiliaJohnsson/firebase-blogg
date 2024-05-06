@@ -22,15 +22,17 @@ const SeeAllBloggPosts = () => {
 
     const content = bloggPosts.map(bloggpost => (
         <li key={bloggpost.id}>
-            {bloggpost.rubrik} {bloggpost.text} {bloggpost.createdAt}
+            {bloggpost.rubrik}
+            <br /><br />{bloggpost.text}
+            <br /><br />{bloggpost.createdAt}
 
         </li>
     ))
 
     return (
         <>
-            <section>
-                <ul>
+            <section className="main-container">
+                <ul className="blogg-post-container">
                     {content}
                 </ul>
             </section>
