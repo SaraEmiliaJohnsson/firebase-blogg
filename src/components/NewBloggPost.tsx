@@ -18,14 +18,15 @@ const NewBloggPost = () => {
 
     const handleSave = async () => {
 
-        const bloggPost: BloggPost = {
+        const newBloggPost: BloggPost = {
             rubrik: rubrik,
             text: text,
             createdAt: new Date().toISOString()
         };
 
         try {
-            await addDoc(collection(db, 'bloggposts'), bloggPost);
+            const docRef = await addDoc(collection(db, 'bloggposts'), newBloggPost);
+            console.log("Document written with ID: ", docRef.id);
             setRubrik('');
             setNewText('');
         } catch (error) {

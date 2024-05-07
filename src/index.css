@@ -44,8 +44,22 @@ body {
 ul {
   list-style: none;
   display: flex;
-  width: 13em;
+  width: 20em;
   justify-content: space-around;
+}
+
+.main-allposts-container {
+  background-image: url(./assets/pexels.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 88vw;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
 }
 
 .blogg-post-container {
@@ -53,6 +67,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .blogg-post-container li {
@@ -61,6 +76,7 @@ ul {
   margin: 1em;
   border: 2px solid #590152;
   padding: 2em;
+  background-color: #7d0373;
 }
 
 a {
