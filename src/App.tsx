@@ -6,6 +6,7 @@ import HeaderComponent from './components/HeaderComponent'
 import NewBloggPost from './components/NewBloggPost'
 import SeeAllBloggPosts from './components/SeeAllBloggPosts'
 import StartingPageComponent from './components/StartingPageComponent'
+import LogInComponent from './components/LoginComponent'
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
     <Router>
       <HeaderComponent />
       <Routes>
-        <Route path='/' element={<StartingPageComponent />} />
+        <Route path='/' element={<LogInComponent />} />
+        <Route path='/start' element={<StartingPageComponent />} />
         <Route path='/newpost' element={<NewBloggPost />} />
         <Route path='/allposts' element={<SeeAllBloggPosts />} />
       </Routes>
