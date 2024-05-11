@@ -1,6 +1,7 @@
 import { addDoc, collection } from "firebase/firestore";
 import { useState } from "react";
 import db from "../features/firebaseConfig";
+import { useNavigate } from "react-router-dom";
 
 
 export interface BloggPost {
@@ -15,6 +16,7 @@ export interface BloggPost {
 const NewBloggPost = () => {
     const [rubrik, setRubrik] = useState('');
     const [text, setNewText] = useState('');
+    const navigate = useNavigate();
 
     const handleSave = async () => {
 
@@ -27,8 +29,7 @@ const NewBloggPost = () => {
         try {
             const docRef = await addDoc(collection(db, 'bloggposts'), newBloggPost);
             console.log("Document written with ID: ", docRef.id);
-            setRubrik('');
-            setNewText('');
+            navigate('/allposts')
         } catch (error) {
             console.error('Error adding document', error);
         }
