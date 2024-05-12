@@ -41,7 +41,7 @@ const LogInComponent = () => {
                 <input type="text" placeholder="Email.." id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                 <br />
                 <label>Lösenord:</label>
-                <input type="password" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                <input type="password" placeholder="Lösenord.." value={password} onChange={(e) => setPassword(e.target.value)} />
                 <section>
                     <button onClick={signInUser}>LogIn</button>
                     <button onClick={createUser}>SignUp</button>
