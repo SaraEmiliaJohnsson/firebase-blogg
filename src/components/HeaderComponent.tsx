@@ -31,13 +31,14 @@ const HeaderComponent = () => {
             <section className="header-container">
                 <nav>
                     <ul>
+                        <li><Link to='/'>Startsida</Link></li>
                         {isLoggedIn ? (
                             <li className="login-link" onClick={handleLogout}><Link to='/'>Logout</Link></li>
                         ) : (
-                            <li className="login-link"><Link to='/'>Login</Link></li>
+                            <li className="login-link"><Link to='/login'>Login</Link></li>
                         )}
 
-                        <li><Link to='/start'>Startsida</Link></li>
+
                         <li><Link to='/newpost'>Skriv ett inlägg</Link></li>
                         <li><Link to='/allposts'>Läs inlägg</Link></li>
                     </ul>
