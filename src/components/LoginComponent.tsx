@@ -13,7 +13,7 @@ const LogInComponent = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCrediential) => {
                 console.log('Inloggad', userCrediential);
-                navigate('/start');
+                navigate('/landing');
 
             })
             .catch((error) => {
@@ -26,7 +26,7 @@ const LogInComponent = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredinteial) => {
                 console.log('Inloggad', userCredinteial);
-                navigate('/start');
+                navigate('/landing');
             })
             .catch((error) => {
                 console.log(error.message);
